@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#image-gallery {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+  max-width: 100%;
+  position: absolute;
+    top: 0;
+    left: 0;
+  z-index: 100;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 170px;
+  height: 270px;
+  background: #0D8;
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}
+.grid-item--width1 { width: 250px; }
+.grid-item--width2 { width: 450px; }
+
+#image1 {
+  background-image: url("../images/gallery/image1.png");
+  background-size: cover;
+}
+#image2 {
+  background-image: url("../images/gallery/image2.png");
+  background-size: cover;
+}
+#image3 {
+  background-image: url("../images/gallery/image3.png");
+  background-size: cover;
+}
+#image4 {
+  background-image: url("../images/gallery/image4.png");
+  background-size: cover;
+}
+#image5 {
+  background-image: url("../images/gallery/image5.png");
+  background-size: cover;
+}
+#image6 {
+  background-image: url("../images/gallery/image6.png");
+  background-size: cover;
+}
+#image7 {
+  background-image: url("../images/gallery/image7.png");
+  background-size: cover;
+}
+#image8 {
+  background-image: url("../images/gallery/image8.png");
+  background-size: cover;
+}
+#image9 {
+  background-image: url("../images/gallery/image9.png");
+  background-size: cover;
+}
+#image10 {
+  background-image: url("../images/gallery/image10.png");
+  background-size: cover;
+}
+#image11 {
+  background-image: url("../images/gallery/image11.png");
+  background-size: cover;
+}
+#image12 {
+  background-image: url("../images/gallery/image12.png");
+  background-size: cover;
+}
+
+/* ---- carousel ---- */
+
+#carousel.container {
+  width: 100%;
+  padding: 0;
+  position: absolute;
+    top: 0;
+    left: 0;
+  z-index: 0;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 810px;
+}
