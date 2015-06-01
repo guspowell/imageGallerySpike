@@ -10,29 +10,73 @@
     <link href="css/normalize.css" rel="stylesheet">
 
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/mansonry.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
   </head>
 
   <body>
-    
-    <h1>Isotope - masonry layout mode</h1>
 
     <div class="grid">
-      <div class="grid-item grid-item--width2"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--width2 grid-item--height2"></div>
-      <div class="grid-item grid-item--width2"></div>
-      <div class="grid-item grid-item--width2"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--width2"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
+      <div class="grid-item grid-item--width18" id="image1"></div>
+      <div class="grid-item grid-item--width30" id="image2"></div>
+      <div class="grid-item grid-item--width30" id="image3"></div>
+      <div class="grid-item grid-item--width22" id="image4"></div>
+
+      <div class="grid-item grid-item--width30" id="image5"></div>
+      <div class="grid-item grid-item--width30" id="image6"></div>
+      <div class="grid-item grid-item--width12" id="image7"></div>
+      <div class="grid-item grid-item--width28" id="image8"></div>
+
+      <div class="grid-item grid-item--width18" id="image9"></div>
+      <div class="grid-item grid-item--width30" id="image10"></div>
+      <div class="grid-item grid-item--width30" id="image11"></div>
+      <div class="grid-item grid-item--width22" id="image12"></div>
     </div>
+
+<div class="container">
+    <div id="image1Carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#image1Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#image1myCarousel" data-slide-to="1"></li>
+        <li data-target="#image1Carousel" data-slide-to="2"></li>
+        <li data-target="#image1Carousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/image1/carousel/10-marketing-with-etiquette.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="images/image1/carousel/10-marketing-with-etiquette.jpg" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="images/image1/carousel/10-marketing-with-etiquette.jpg" alt="Flower">
+        </div>
+
+        <div class="item">
+          <img src="images/image1/carousel/10-marketing-with-etiquette.jpg" alt="Flower">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+
+  </body>
 
 </html>

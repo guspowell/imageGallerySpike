@@ -16,6 +16,8 @@ body {
   max-width: 100%;
 }
 
+img { width: 100%; }
+
 /* clear fix */
 .grid:after {
   content: '';
@@ -27,12 +29,71 @@ body {
 
 .grid-item {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 30%;
+  height: 250px;
   background: #0D8;
   border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.7);
+  border-color: white;
+}
+.grid-item--width12 { width: 12%; }
+.grid-item--width15 { width: 15%; }
+.grid-item--width18 { width: 18%; }
+.grid-item--width20 { width: 20%; }
+.grid-item--width22 { width: 22%; }
+.grid-item--width25 { width: 25%; }
+.grid-item--width28 { width: 28%; }
+
+#image1 {
+  background-image: url("images/gallery/image1.png");
+  background-size: cover;
+}
+#image2 {
+  background-image: url("images/gallery/image2.png");
+  background-size: cover;
+}
+#image3 {
+  background-image: url("images/gallery/image3.png");
+  background-size: cover;
+}
+#image4 {
+  background-image: url("images/gallery/image4.png");
+  background-size: cover;
+}
+#image5 {
+  background-image: url("images/gallery/image5.png");
+  background-size: cover;
+}
+#image6 {
+  background-image: url("images/gallery/image6.png");
+  background-size: cover;
+}
+#image7 {
+  background-image: url("images/gallery/image7.png");
+  background-size: cover;
+}
+#image8 {
+  background-image: url("images/gallery/image8.png");
+  background-size: cover;
+}
+#image9 {
+  background-image: url("images/gallery/image9.png");
+  background-size: cover;
+}
+#image10 {
+  background-image: url("images/gallery/image10.png");
+  background-size: cover;
+}
+#image11 {
+  background-image: url("images/gallery/image11.png");
+  background-size: cover;
+}
+#image12 {
+  background-image: url("images/gallery/image12.png");
+  background-size: cover;
 }
 
-.grid-item--width2 { width: 200px; }
-.grid-item--height2 { height: 200px; }
+.carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     width: 70%;
+     margin: auto;
+ }
