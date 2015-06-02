@@ -13,7 +13,6 @@ $(document).ready(function() {
 
 	function getNumColumns(){
 		var winWidth = $(window).width();
-		console.log(winWidth);
 		var column = 3;
 		if (winWidth<380) column = 1;
 		else if(winWidth >=380 && winWidth<850)  column = 2;

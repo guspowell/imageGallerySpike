@@ -5,26 +5,31 @@ $(document).ready( function() {
 
   fadeOutImages();
 
-  // loadCarouselImages();
-
   setArrowPosition();
-
-
 
 });
 
-function loadCarouselImages() {
-
+function loadCarouselImages(selector) {
   var imagesJson = {
-    "generation entrepreneur" : ["image1.png","image2.png"]
+    "generation-entrepreneur" : ["10-marketing-with-etiquette.jpg","02_shifting_gender_norms.png", "04-embracing-extremes.jpg"],
+    "shifting-gender-norms" : ["08-privacy-tightrope.jpg", "09-creative-communicators.png"]
   }
+  var imageArray = imagesJson[selector]
 
-  var index = 0;
+  var content = "";
 
-
+  for(var i=0; i<imageArray.length; i++) {
+    var activeImage = imageArray[0]
+    var image = imageArray[i];
+    content += "<div class='item'>" +
+              "<img src='images/image1carousel/" + image + "' alt='Chania' width='460' height='345'>" +
+              "</div>";
+    console.log(content);
+    $(".carousel-inner").html(content);
+    $(".carousel-inner .item").first().attr('class', 'item active');
+  };
 };
 
-$(".carousel-inner .item")
 function carouselHeight() {
   var height = $("#image-gallery").height();
   $("#carousel, .carousel-inner").css("height", height);
@@ -40,6 +45,7 @@ function setArrowPosition() {
 
 function fadeOutImages() {
   $(".grid-item").click(function() {
+    loadCarouselImages($(this).attr('rel'));
     $(".grid").css({background:"transparent"});
     var selected = this;
     $(function() {
