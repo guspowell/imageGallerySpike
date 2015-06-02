@@ -1,8 +1,9 @@
 $(document).ready( function() {
 
   $('.grid').isotope({
-  	layoutMode: 'fitRows',
-    itemSelector: '.grid-item'
+    itemSelector: '.grid-item',
+		resizable : false,
+		transformsEnabled : true
   });
 
   // setArrowPosition();
