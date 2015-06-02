@@ -18,20 +18,12 @@ body {
 /* ---- grid ---- */
 
 .grid {
-  background: #FAC421;
   max-width: 100%;
   position: absolute;
     top: 0;
     left: 0;
   z-index: 100;
   /*display: none;*/
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
 }
 
 /* ---- .grid-item ---- */

@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var sidebarWidth = 0;
 	var leftOffset = sidebarWidth;
 	var $container = $('#image-gallery');
+	var background = "#FAC421"
 
 	setColumnWidth();
 	$container.isotope({
@@ -10,6 +11,17 @@ $(document).ready(function() {
 			resizable : false,
 			transformsEnabled : true
 	});
+	
+	setBackgroundColor();
+
+	function setBackgroundColor() {
+		containerHeight = $("#image-gallery").height();
+		containerWidth = $("#image-gallery").width();
+		console.log(containerHeight);
+		$(".grid").css({"width": containerWidth, "height": containerHeight, "background-color": background});
+	};
+
+
 
 	function getNumColumns(){
 		var winWidth = $(window).width();
