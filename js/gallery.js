@@ -5,21 +5,37 @@ $(document).ready( function() {
 
   fadeOutImages();
 
+  // loadCarouselImages();
+
   setArrowPosition();
+
+
 
 });
 
+function loadCarouselImages() {
 
+  var imagesJson = {
+    "generation entrepreneur" : ["image1.png","image2.png"]
+  }
+
+  var index = 0;
+
+
+};
+
+$(".carousel-inner .item")
 function carouselHeight() {
-  var height = $(".grid").height();
+  var height = $("#image-gallery").height();
   $("#carousel, .carousel-inner").css("height", height);
-  console.log(height);
   return height;
 };
 
 function setArrowPosition() {
   var height = carouselHeight();
-  // console.log(height);
+  var arrowHeight = 100;
+  var padding = (height - arrowHeight)/2;
+  $(".carousel-control").css("padding-top", padding);
 };
 
 function fadeOutImages() {
