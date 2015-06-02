@@ -18,7 +18,7 @@ body {
 /* ---- grid ---- */
 
 .grid {
-  background: #DDD;
+  background: #FAC421;
   max-width: 100%;
   position: absolute;
     top: 0;
@@ -39,9 +39,6 @@ body {
   float: left;
   width: 170px;
   height: 270px;
-  background: #0D8;
-  border: 1px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.7);
 }
 .grid-item--width1 { width: 250px; }
 .grid-item--width2 { width: 450px; }
@@ -109,4 +106,17 @@ body {
 .carousel-inner > .item > a > img {
     width: 100%;
     margin: auto;
+}
+
+.left.carousel-control {
+  background-color: blue;
+}
+
+.left-arrow {
+  transform: rotate(90deg); /* IE10 and Mozilla */
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  height: 100px;
+  background-color: red;
+  vertical-align: middle;
 }
