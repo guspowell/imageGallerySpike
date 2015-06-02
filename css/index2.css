@@ -37,11 +37,8 @@ body {
 
 .grid-item {
   float: left;
-  width: 170px;
   height: 270px;
 }
-.grid-item--width1 { width: 250px; }
-.grid-item--width2 { width: 450px; }
 
 #image1 {
   background-image: url("../images/gallery/image1.png");
