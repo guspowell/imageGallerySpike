@@ -23,7 +23,6 @@ body {
     top: 0;
     left: 0;
   z-index: 100;
-  /*display: none;*/
 }
 
 /* ---- .grid-item ---- */
@@ -98,26 +97,17 @@ body {
     margin: auto;
 }
 
-.carousel-control {
-  background-color: yellow;
-  text-align: center;
-}
-
 .left-arrow {
   transform: rotate(90deg); /* IE10 and Mozilla */
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg);
   height: 100px;
-  background-color: red;
-  display: block;
-  margin: 0 auto;
+  margin-left: -150px;
 }
 .right-arrow {
   transform: rotate(270deg); /* IE10 and Mozilla */
   -ms-transform: rotate(270deg); /* IE 9 */
   -webkit-transform: rotate(270deg);
   height: 100px;
-  background-color: red;
-  display: block;
-  margin: 0 auto;
+  margin-left: -75px;
 }
